@@ -1,0 +1,29 @@
+# Cache de Python y de Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Versiones anteriores y material entregado. Se conservan en local como
+# referencia, pero no forman parte del proyecto publicado.
+_archivo_original/
+
+# La presentacion editable se conserva en local; lo que se publica es el PDF.
+*.pptx
+
+# Datos: NO se suben. Los regenera 01_preprocesamiento.ipynb a partir del
+# dataset publico de Hugging Face. Son 32 MB y ademas contienen texto de
+# resenas escritas por personas reales.
+*.parquet
+
+# Cache de Hugging Face
+.cache/
+
+# Residuos del sistema de archivos
+Thumbs.db
+desktop.ini
+bash.exe.stackdump
+~$*

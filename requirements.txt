@@ -1,0 +1,38 @@
+# Proyecto: Topic Modeling sobre reseñas de Letterboxd
+# Alfredo Martin Lopez - Marcos Fernandez Arevalo - Pedro Perez Blanco
+# Master en Business Analytics (MUBA) - Universidad Pontificia Comillas ICADE
+#
+#     pip install -r requirements.txt
+#     python -m spacy download en_core_web_sm
+#
+# Los .parquet NO estan en el repositorio: los genera 01_preprocesamiento.ipynb
+# a partir del dataset publico pkchwy/letterboxd-all-movie-data (Hugging Face).
+# Orden de ejecucion: 01_preprocesamiento.ipynb -> 02_topic_modeling.ipynb
+
+# --- datos y calculo ---
+pandas==2.3.3
+numpy==2.3.5
+pyarrow==24.0.0
+scikit-learn==1.8.0
+
+# --- descarga del dataset ---
+datasets==5.0.1
+
+# --- PLN ---
+spacy==3.8.16
+nltk==3.10.3
+langdetect==1.0.9
+flair==0.15.1          # POS tagging contextual; solo sobre una muestra (es el mas lento)
+
+# --- topic modeling ---
+gensim==4.4.0
+pyLDAvis==3.4.1
+
+# --- graficos ---
+matplotlib==3.10.9
+seaborn==0.13.2
+wordcloud==1.9.6
+
+# --- entorno ---
+notebook==7.5.6
+ipykernel==7.2.0
